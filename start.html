@@ -17,34 +17,45 @@
 
   <body>
     <h2>Registration Form</h2>
-        
+        <form action="">
       <label for="email">Email:</label>
       <input name="email" type="text"  placeholder="E.g. hello@johndoe.com" >
       <label for="password">Password:</label>
       <input name="password" type="text"  placeholder="mypass123" >
-      <label for="clientname">Name:</label> 
-      <input name="clientname" type="text"  placeholder="John" >
-      <label for="clientlastname">Lastname:</label> 
-      <input name="clientlastname" type="text"  placeholder="Doe" >
-      <label for="clientdateofbirth">Date of birth:</label> 
-      <input name="clientdateofbirth" type="date"  >
-      <label for="clienttelephone">Telephone:</label> 
-      <input name="clienttelephone" type="tel" >
+      <label for="name">Name:</label> 
+      <input name="name" type="text"  placeholder="John" >
+      <label for="lastname">Lastname:</label> 
+      <input name="lastname" type="text"  placeholder="Doe" >
+      <label for="dateofbirth">Date of birth:</label> 
+      <input name="dateofbirth" type="date"  >
+      <label for="telephone">Telephone:</label> 
+      <input name="telephone" type="tel" >
       <h3>Choose a free plan</h3>
       <label for="freeplan">Free plan</label> 
       <input type="radio" name="plan">
       <h3>Or a paid one</h3>
-      <span>
       <label for="silverplan">Silver - 50$</label> 
-      <input type="radio" name="plan">
+      <input type="radio" name="plan" id="silver" value="silverplan">
       <label for="goldplan">Gold - 200$</label> 
-      <input type="radio" name="plan"> 
+      <input type="radio" name="plan" id="gold" value="goldplan">
       <label for="goldplan">Diamond - 500$</label> 
-      <input type="radio" name="plan"> 
+      <input type="radio" name="plan" id="diamond" value="diamondplan"> 
+      <label for="proplan">Pro Plan</label> 
+      <input type="checkbox" name="proplan" value="proplan">
+      <h3>Billing Data</h3>
+      <label for="cardnumber">Credit Card Number:</label>
+      <input name="cardnumber" type="text" >
+      <label for="cvc">CVC:</label>
+      <input name="cvc" type="text" >
+      <label for="expirationdate">Expiration date:</label> 
+      <input name="expirationdate" type="date"  >
+      <label for="billingaddress">Billing address</label> 
+      <input name="billingaddress" type="text" >
         
 
-
-
+<br><br>
+<button>Submit</button>
+</form>
 
 
   </body>
