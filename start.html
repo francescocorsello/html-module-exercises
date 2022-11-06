@@ -30,16 +30,17 @@
       <input name="dateofbirth" type="date" >
       <label for="telephone">Telephone:<abbr title="required">*</abbr></label> 
       <input name="telephone" type="tel" placeholder="Your phone number" required>
-      <h3>Choose a free plan<abbr title="required">*</abbr></h3>
-      <label for="freeplan">Free plan</label> 
-      <input type="radio" name="plan">
-      <h3>Or a paid one</h3>
-      <label for="silverplan">Silver - 50$</label> 
-      <input type="radio" name="plan" id="silver" value="silverplan" required>
-      <label for="goldplan">Gold - 200$</label> 
-      <input type="radio" name="plan" id="gold" value="goldplan" required>
-      <label for="goldplan">Diamond - 500$</label> 
-      <input type="radio" name="plan" id="diamond" value="diamondplan" required> 
+
+      <label for="form-plan">Choose a plan<abbr title="required">*</abbr></label>
+      <select id="form-plan" name="plan" required>
+        <option value="0">Free</option>
+        <optgroup label="paid">
+          <option value="silver">Silver - 50$</option>
+          <option value="gold">Gold - 200$</option>
+          <option value="diamond">Diamond - 500$</option>
+        </optgroup>
+      </select>
+
       <label for="proplan">Pro Plan</label> 
       <input type="checkbox" name="proplan" value="proplan" required>
       <h3>Billing Data</h3>
