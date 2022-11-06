@@ -18,41 +18,41 @@
   <body>
     <h2>Registration Form</h2>
         <form action="">
-      <label for="email">Email:</label>
-      <input name="email" type="email"  placeholder="E.g. hello@johndoe.com" >
-      <label for="password">Password:</label>
-      <input name="password" type="password"  placeholder="Choose a password" >
-      <label for="name">Name:</label> 
-      <input name="name" type="text"  placeholder="John" >
-      <label for="lastname">Lastname:</label> 
-      <input name="lastname" type="text"  placeholder="Doe" >
-      <label for="dateofbirth">Date of birth:</label> 
-      <input name="dateofbirth" type="date"  >
-      <label for="telephone">Telephone:</label> 
-      <input name="telephone" type="tel" placeholder="Your phone number">
-      <h3>Choose a free plan</h3>
+      <label for="email">Email:<abbr title="required">*</abbr></label>
+      <input name="email" type="email"  placeholder="E.g. hello@johndoe.com" required>
+      <label for="password">Password:<abbr title="required">*</abbr></label>
+      <input name="password" type="password"  placeholder="Choose a password" minlength="8" maxlength="20" required>
+      <label for="name">Name:<abbr title="required">*</abbr></label> 
+      <input name="name" type="text"  placeholder="John" required>
+      <label for="lastname">Lastname:<abbr title="required">*</abbr></label> 
+      <input name="lastname" type="text"  placeholder="Doe" required>
+      <label for="dateofbirth">Date of birth:<abbr title="required">*</abbr></label> 
+      <input name="dateofbirth" type="date" >
+      <label for="telephone">Telephone:<abbr title="required">*</abbr></label> 
+      <input name="telephone" type="tel" placeholder="Your phone number" required>
+      <h3>Choose a free plan<abbr title="required">*</abbr></h3>
       <label for="freeplan">Free plan</label> 
       <input type="radio" name="plan">
       <h3>Or a paid one</h3>
       <label for="silverplan">Silver - 50$</label> 
-      <input type="radio" name="plan" id="silver" value="silverplan">
+      <input type="radio" name="plan" id="silver" value="silverplan" required>
       <label for="goldplan">Gold - 200$</label> 
-      <input type="radio" name="plan" id="gold" value="goldplan">
+      <input type="radio" name="plan" id="gold" value="goldplan" required>
       <label for="goldplan">Diamond - 500$</label> 
-      <input type="radio" name="plan" id="diamond" value="diamondplan"> 
+      <input type="radio" name="plan" id="diamond" value="diamondplan" required> 
       <label for="proplan">Pro Plan</label> 
-      <input type="checkbox" name="proplan" value="proplan">
+      <input type="checkbox" name="proplan" value="proplan" required>
       <h3>Billing Data</h3>
-      <label for="cardnumber">Credit Card Number:</label>
-      <input name="cardnumber" type="text" placeholder="Your credit card number">
-      <label for="cvc">CVC:</label>
-      <input name="cvc" type="text" placeholder="behind credit card">
-      <label for="expirationdate">Expiration date:</label> 
-      <input name="expirationdate" type="date"  >
-      <label for="billingaddress">Billing address:</label> 
-      <input name="billingaddress" type="text" placeholder="Your billing address">
+      <label for="cardnumber">Credit Card Number:<abbr title="required">*</abbr></label>
+      <input name="cardnumber" type="number" placeholder="Your credit card number" 
+      minlength="16" maxlength="16" required>
+      <label for="cvc">CVC:<abbr title="required">*</abbr></label>
+      <input name="cvc" type="text" placeholder="behind credit card" required>
+      <label for="expirationdate">Expiration date:<abbr title="required">*</abbr></label> 
+      <input name="expirationdate" type="date" required>
+      <label for="billingaddress">Billing address:<abbr title="required">*</abbr></label> 
+      <input name="billingaddress" type="text" placeholder="Your billing address" required>
         
-
 <br><br>
 <button>Buy</button>
 </form>
